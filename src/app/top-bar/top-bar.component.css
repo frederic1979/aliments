@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    
+    
+}
+
+ul
+{
+    
+    list-style-type:none;
+    background-color:#efd807;
+    display: flex;
+    justify-content: space-evenly;
+   
+
+   
+
+}
+
+.menu
+{
+    background-color:#746a13;
+    
+}

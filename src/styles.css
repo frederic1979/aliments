@@ -1,0 +1,77 @@
+
+section
+{
+    background-color: rgb(61, 61, 61);
+    margin:-10px;
+    
+}
+
+
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.formulaireAjout
+    {
+        background-color:grey;
+         width:50%;
+    margin: auto;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    
+   
+    }
+
+label
+{
+    width: 400px;
+    display:inline-block;
+}
+
+
+.backgroundListe
+
+{
+    text-align: center;
+    color: white;
+}
+
+.trie
+{
+    display: flex;
+    
+
+}
+
+
+td,th
+{
+    text-align: center;
+    color: white;
+}
+
+table {
+    background-color:grey;
+    border-width:1px; 
+    border-collapse: collapse;
+    border-style:solid; 
+    border-color:black;
+    width:50%;
+    margin: auto;
+    font-size: 15px;
+    
+    }
+   td,th { 
+    border-width:1px;
+    border-style:solid; 
+    border-color:#efd807;
+    width:50%;
+
+    
+    
+    }
+
+    

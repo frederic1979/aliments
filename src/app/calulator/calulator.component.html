@@ -1,0 +1,56 @@
+<div class="formulaireAjout">
+    <h3>Definition des portions</h3>
+
+
+    
+
+
+
+    <form [formGroup]="formula" (ngSubmit)="fonctionCalcul(formula.value)">
+
+
+        
+        <label for="liste">Aliments</label>
+        <select formControlName="aliment" id="liste">
+            <option > Choose Food</option>
+            <option [ngValue]="alimentToto"  *ngFor="let alimentToto of calculatorAlimentList">
+                {{alimentToto.name}}
+            </option>
+        </select>
+
+        <label for="portion">Portion (g)</label>
+        <input formControlName="portion" id="portion" type="number" >
+        <button type="submit">Ajouter</button>
+    </form>
+
+
+</div>
+
+
+<div class="formulaireAjout">
+        <h1>CHARGE TOTAL : {{chargCalTot}}</h1>
+    <h3>Liste des portions ajoutées</h3>
+
+    <table>
+
+
+        <tr>
+            <th>Nom de l'aliment</th>
+            <th>Index glycémique</th>
+            <th>Proportion de glucides (g)</th>
+            <th>Charge glycemique calculée</th>
+            <th>Supprimer</th>
+        </tr>
+
+        <tr *ngFor="let alimentToto of portionAlimentList;index as indexId ">
+            <td>{{alimentToto.name}}</td>
+            <td>{{alimentToto.ig}}</td>
+            <td>{{alimentToto.prop}}</td>
+            <td>{{alimentToto.charg}}</td>
+            <td><button (click) = calculatorSupp(indexId)>Supprimer</button></td>
+
+
+
+    </table>
+
+</div>
